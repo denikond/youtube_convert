@@ -25,8 +25,8 @@ def find():
     if form.validate_on_submit():
         session['startdate'] = form.startdate.data
         session['enddate'] = form.enddate.data
-        session['starttime'] = form.starttime.data
-        session['endtime'] = form.endtime.data
+        session['starttime'] = str(form.starttime.data)
+        session['endtime'] = str(form.endtime.data)
         return redirect(url_for('date'))
     return render_template('find.html', form=form)
 
