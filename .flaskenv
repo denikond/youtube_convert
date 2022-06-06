@@ -1,1 +1,1 @@
-FLASK_APP=cucm_cdr_front.py
+FLASK_APP=main.py
