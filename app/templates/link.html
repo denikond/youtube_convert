@@ -4,8 +4,7 @@
 <h3> Select a date range </h3>
 <form action="" method='POST' name="myform">
     {{ form.csrt_token }}
-    {{ form.startdate.label }} {{form.startdate(class='datepicker')}} {{ form.starttime }} {{form.hidden_tag()}}
-    {{ form.enddate.label }} {{form.enddate(class='datepicker')}} {{ form.endtime }} {{form.hidden_tag()}}
+    {{ form.link.label }} {{ form.link }} {{form.hidden_tag()}}
     <p>
     {{form.submit()}}
     </p>

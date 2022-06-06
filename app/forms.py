@@ -12,11 +12,6 @@ class LoginForm(FlaskForm):
     submit = SubmitField('Sign In')
 
 
-class LookingFor(FlaskForm):
-    #startdate = DateField('Начало', format='%d-%m-%Y', validators=[DataRequired(),])
-    #enddate = DateField('Конец', format='%d-%m-%Y', validators=[DataRequired(),])
-    startdate = DateField('Начало', format='%Y-%m-%d')
-    starttime = TimeField('stt', format="%H:%M")
-    enddate = DateField('Конец', format='%Y-%m-%d')
-    endtime = TimeField('ent', format="%H:%M")
-    submit = SubmitField('Submit')
+class GetLink(FlaskForm):
+    link = StringField('Enter Link', validators=[DataRequired()])
+    submit = SubmitField('Sign In')
