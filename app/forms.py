@@ -13,5 +13,5 @@ class LoginForm(FlaskForm):
 
 
 class GetLink(FlaskForm):
-    link = StringField('Enter Link', validators=[DataRequired()])
+    link = StringField('Enter Youtube Link', validators=[DataRequired()])
     submit = SubmitField('Sign In')
